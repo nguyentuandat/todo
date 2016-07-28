@@ -1,0 +1,32 @@
+// out: style.css
+body{
+    font-size:14px;
+    color:#333;
+    font-family: sans-serif;
+    >.container{
+        width:500px;
+    }
+}
+.list-item{
+    list-style: none;
+    padding-left: 0px;
+    margin:20px 0px;
+    li { 
+        padding: 5px;
+        cursor: pointer;
+        &:hover{
+            background: rgba(0,0,0,0.2);
+        }
+        &.done{
+            span{ 
+                text-decoration: line-through;
+                color:dodgerblue;
+            }
+        }
+        &.deleted{
+            span{
+                color:gainsboro;
+            }
+        }
+    }
+}
