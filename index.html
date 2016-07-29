@@ -17,22 +17,19 @@
 
 <body>
     <header class="container">
-        <h1>Test Todo app</h1>
+        <h1>My Todo</h1>
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 form-inline">
-                <div class="form-group">
-                    <input class="form-control" id="txtNewTask" placeholder="Enter new task" />
-                    <button class="btn btn-success" id="btnSave" >Create</button>
-                </div>
+            <div class="col-md-12">
+                <div class="input-group">
+                    <input class="form-control" id="txtNewTask" placeholder="Enter new task"  aria-describedby="basic-addon1" />
+                    <span class="input-group-btn" id="basic-addon1"><button class="btn btn-success" id="btnSave" >Create</button></span>
+                </div>    
             </div>
             <div class="col-md-12">
                 <ul class="list-item" id="todoList">
-                    <li><span>Learn React</span> <a href="javascript:;" class="btn-delete">Remove</a></li>
-                    <li>Learn React 2</li>
-                    <li class="done">Learn React 3</li>
-                    <li>Learn React 4</li>
+                    <li>Loading...</li>
                 </ul>
             </div>
         </div>

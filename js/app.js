@@ -61,7 +61,7 @@ var TodoApp = function(firebase){
         },
         getList: function(){
             var that = this;
-            firebase.database().ref('todo').on('value', function(snapshot){
+            firebase.database().ref('todo').orderByKey().on('value', function(snapshot){
                 var items = snapshot.val();
                 that.render(items);
             });
